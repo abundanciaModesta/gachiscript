@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Let us yopt you!</title>
+    <style>
+        textarea,
+        #outputField {
+            font-size: 18px;
+            font-family: Consolas, Menlo, Monaco, Lucida Console,
+                Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono,
+                Courier New, monospace, serif;
+            width: 50%;
+        }
+
+        strong {
+            font-size: 22px;
+        }
+
+        #outputField {
+            height: 200px;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Переводчик из JavaScript в YoptaScript</h1>
+    <hr />
+    <strong>Js</strong>
+    <br />
+    <textarea name="jstoyopta" id="jstoyopta" cols="80" rows="9"></textarea>
+    <br />
+    <strong>YoptaScript</strong>
+    <br />
+    <textarea name="yopta" id="yopta" cols="80" rows="9"></textarea>
+    <br />
+    <strong>Выполнение кода</strong> <br />
+    <div id="outputField"></div>
+
+    <script type="text/x-yoptascript" src="converter.yopta"></script>
+    <script src="outputEval.js"></script>
+    <script src="../../dist/yopta.js"></script>
+</body>
+
+</html>
